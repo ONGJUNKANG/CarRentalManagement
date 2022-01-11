@@ -13,27 +13,17 @@ namespace CarRentalManagement.Server.Configurations.Entities
         public void Configure(EntityTypeBuilder<Make> builder)
         {
             builder.HasData(
-            new Make
-            {
-                Id = 1,
-                Name = "3 Series"
-            },
-            new Make
-            {
-                Id = 2,
-                Name = "X5"
-            },
-            new Make
-            {
-                Id = 3,
-                Name = "Prius"
-            },
-            new Make
-            {
-                Id = 4,
-                Name = "Rav4"
-            }
-            );
+              new Model
+              {
+                  Id = 1,
+                  Name = "BMW"
+              },
+              new Model
+              {
+                  Id = 2,
+                  Name = "Toyota"
+              }
+              );
         }
     }
 }
